@@ -1,0 +1,31 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+
+  background-color: $primary-color;
+
+  &__name {
+    font-size: 32px;
+    font-weight: bold;
+    color: $secondary-text-color;
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+  }
+
+  &__link {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px;
+    color: $secondary-text-color;
+
+    &--active {
+      color: $primary-color;
+      background-color: white;
+    }
+  }
+}
