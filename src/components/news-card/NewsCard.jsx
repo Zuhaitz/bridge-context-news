@@ -3,8 +3,6 @@ import "./NewsCard.scss";
 const NewsCard = ({ title, published_date, media }) => {
   const photos = media.length > 0 ? media[0]["media-metadata"] : null;
 
-  console.log(photos);
-
   return (
     <div className="news-card">
       {photos && (

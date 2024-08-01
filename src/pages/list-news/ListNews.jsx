@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import { useContext, useEffect } from "react";
 import { GlobalContext } from "../../context/GlobalState";
 import NewsCard from "../../components/news-card/NewsCard";
 
@@ -10,8 +10,6 @@ const ListNews = () => {
   useEffect(() => {
     getNews();
   }, []);
-
-  console.log(news);
 
   return (
     <>

@@ -1,0 +1,37 @@
+.home {
+  &__title {
+    margin: 10px 20px;
+
+    font-size: 50px;
+    text-align: center;
+
+    border-bottom: 2px solid $primary-text-color;
+
+    color: $primary-color;
+  }
+
+  &__subtitle {
+    font-size: 22px;
+    text-align: center;
+
+    color: $ternary-text-color;
+  }
+
+  &__section {
+    margin: 20px 40px;
+
+    font-size: 30px;
+    text-align: center;
+
+    border-bottom: 1px dashed $primary-text-color;
+
+    color: $primary-text-color;
+  }
+
+  &__top {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+}
