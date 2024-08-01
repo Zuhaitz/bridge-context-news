@@ -13,7 +13,7 @@ export const GlobalProvider = ({ children }) => {
 
   const getNews = async () => {
     const res = await axios.get(
-      `https://api.nytimes.com/svc/mostpopular/v2/emailed/7.json?api-key=${env.VITE_NEWS_KEY}`
+      `https://api.nytimes.com/svc/mostpopular/v2/viewed/7.json?api-key=${env.VITE_NEWS_KEY}`
     );
 
     dispatch({

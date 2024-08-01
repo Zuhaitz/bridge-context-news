@@ -1,0 +1,66 @@
+// REF: https://stackoverflow.com/questions/34883555/how-to-scroll-text-within-a-div-to-left-when-hovering-the-div
+
+.news-card {
+  position: relative;
+  width: 440px;
+  height: 293px;
+
+  overflow: hidden;
+  border-radius: 20px;
+
+  background-color: #aaaaaa;
+
+  &__thumbnail {
+    max-width: 100%;
+    height: auto;
+  }
+
+  &__container {
+    width: 100%;
+    padding: 8px 15px;
+
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+
+    font-size: large;
+    color: white;
+    background-color: #00000093;
+
+    transform: translateY(100%);
+    transition: 0.5s;
+  }
+
+  &:hover > &__container {
+    transform: translateY(0);
+  }
+
+  &__title {
+    width: fit-content;
+    margin-bottom: 5px;
+
+    white-space: nowrap;
+    // overflow: hidden;
+    // text-overflow: ellipsis;
+
+    font-size: 20px;
+
+    transform: translateX(0);
+    transition: 1s;
+    transition-delay: 0.5s;
+    transition-property: transform;
+  }
+
+  &:hover > &__container > &__title--hover-anim {
+    transform: translateX(-50%);
+    transition: 10s;
+    transition-delay: 0.4s;
+    transition-property: transform;
+  }
+
+  &__date {
+    font-size: medium;
+    text-align: right;
+    color: #aaaaaa;
+  }
+}
