@@ -1,3 +1,14 @@
+.news-title {
+  margin: 0 20px;
+  padding: 5px 10px;
+  margin-top: 20px;
+  font-size: 48px;
+
+  border-top: 1px dashed $primary-text-color;
+  border-bottom: 2px solid $primary-text-color;
+  color: $primary-color;
+}
+
 .news-container {
   display: flex;
   flex-wrap: wrap;

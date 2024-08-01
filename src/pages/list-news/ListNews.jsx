@@ -14,11 +14,14 @@ const ListNews = () => {
   console.log(news);
 
   return (
-    <div className="news-container">
-      {news.map((n) => (
-        <NewsCard key={n.id} {...n} />
-      ))}
-    </div>
+    <>
+      <h1 className="news-title">Most Popular News Of Last Week</h1>
+      <div className="news-container">
+        {news.map((n) => (
+          <NewsCard key={n.id} {...n} />
+        ))}
+      </div>
+    </>
   );
 };
 
